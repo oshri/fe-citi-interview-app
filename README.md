@@ -21,10 +21,10 @@
   1. Use NGRX ( Redux )
 
 # Main Screen
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/oshri/fe-citi-interview-app/blob/master/Desktop.jpg)
 
 # Colors
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/oshri/fe-citi-interview-app/blob/master/Colors.jpg)
 
 
 
