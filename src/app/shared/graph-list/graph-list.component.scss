@@ -1,0 +1,25 @@
+@import '../../styles/_variables';
+
+.graph-list{
+    display: flex;
+}
+.graph-items {
+    flex-basis: 100%;
+    text-align: center;
+    span {
+        margin: 7.5px 5px;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        &.gp {
+            width:30px;
+            margin: 7.5px auto;
+            background: $color-gr;
+            border-radius: 10px;
+            &.ac {
+                background: $color-ac;
+            }
+        }
+        
+    }
+}

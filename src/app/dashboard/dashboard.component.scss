@@ -1,0 +1,103 @@
+@import '../styles/_variables';
+.db-header{
+    background: $color-re-bg;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    padding: 20px;
+}
+.db-body {
+    display: inline-block;
+    width: 100%;
+    background: $color-re-bg;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    .db-left {
+        border-right: 1px solid $color-bg;
+        padding: 20px;
+    }
+    .db-right {
+        padding: 20px;
+    }
+}
+.form-element {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    label {
+        display: inline-block;
+        width:80px;
+    }
+    .input{
+        min-width: 200px;
+        background: transparent;
+        border: 1px solid $color-ac;
+        padding: 5px;
+        border-radius: 5px; 
+        color: $color-wh;
+        font-size: 12px;
+        option {
+            color: $color-bl;
+        }
+    }
+    .input:focus {
+        border: 1px solid $color-pr; 
+    }
+    button {
+        background: $color-ac;
+        border: none;
+        padding: 5px 15px;
+        color: $color-wh;
+        border-radius: 5px; 
+        cursor: pointer;
+        &:hover {
+            color: $color-pr; 
+        }
+    }
+    .error {
+        color: $color-rd;
+        padding-left: 85px;
+    }
+}
+.list-items{
+    background: $color-pr;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    .icon{
+        background: $color-ac;
+        border-radius: 100px;
+        padding: 3px 8px;
+        color: $color-bl;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .time {
+        color: #fdfdfd;
+    }
+    .v-dots{
+        margin-left: 10px;
+        &:after {
+            content: '\2807';
+            font-size: 14px;
+            color: #fdfdfd;
+        }
+    }
+}
+@media only screen and (max-width: $sm-bp) {
+    .db-body {
+        .db-left {
+            border-right: none;
+        }
+        .db-right {
+
+        }
+    }
+    .form-element {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<p>Hours i spent watching {{techListInfo.name}} {{techListInfo.totalTime}}.</p>
+<div class="tech-list">
+    <div class="list-items" *ngFor="let lang of techListInfo.videos">
+        <span class="icon">i</span>
+        <span class="title">{{lang.title}}</span>
+        <span class="v-dots fr"></span>
+        <span class="time fr">{{lang.time}}</span>
+    </div>
+</div>
+

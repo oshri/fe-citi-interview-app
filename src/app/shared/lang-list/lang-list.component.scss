@@ -1,0 +1,27 @@
+@import '../../styles/_variables';
+
+.list-items{
+    background: $color-pr;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    .icon{
+        background: $color-ac;
+        border-radius: 100px;
+        padding: 3px 8px;
+        color: $color-bl;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .time {
+        color: #fdfdfd;
+    }
+    .v-dots{
+        margin-left: 10px;
+        &:after {
+            content: '\2807';
+            font-size: 14px;
+            color: #fdfdfd;
+        }
+    }
+}

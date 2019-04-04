@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'app/styles/_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: $color-bg;
+    font: 12px/150% Arial, Helvetica, sans-serif; 
+    color: $color-wh;
+}
+div {
+    box-sizing: border-box;
+}
+.width-50 {
+    width: 50%;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.main-container {
+    width:70%;
+    margin: 20px auto;
+}
+@media only screen and (max-width: $sm-bp) { 
+    .main-container {
+        width:80%;
+    }
+}
+@media only screen and (max-width: $sm-bp) {
+    .sm-width-100 {
+        width: 100%;
+    }
+    .main-container {
+        width:90%;
+    }
+}
