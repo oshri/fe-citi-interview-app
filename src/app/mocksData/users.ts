@@ -1,4 +1,4 @@
 export const USERS = [
-  {id: 1, name: 'Manoj', playlistID: 1},
-  {id: 2, name: 'David', playlistID: 2}
-];
+    {id: 1, name: 'Manoj', playlistID: 1},
+    {id: 2, name: 'David', playlistID: 2}
+  ];

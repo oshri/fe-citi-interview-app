@@ -1,0 +1,24 @@
+<div class="bg">
+  <div class="alert2" *ngIf="shoMsg">
+      <span class="closebtn" >&times;</span> 
+      No search Results found...!
+    </div>
+
+  <div class="alert" *ngIf="selectCourse">
+      <span class="closebtn" >&times;</span> 
+      Please search courses for a user
+    </div>
+  
+  <div *ngFor="let item of playListVideos; let ind = index">
+    <div *ngIf="ind===0" class="fontCl">Hours I spent watching
+      {{(courseName.length === item.title.length) ?(item.title):(item.title).substring(0,7)}} is 
+       <span *ngIf="timeLength===3">{{threePlace}}</span> <span *ngIf="timeLength===2">{{twoPlace}}</span>
+    </div>
+    <div class="box listBg padLR10 mlr25">
+      <div class="infoIcon mr10"><span class="iValue">i</span></div>
+      <div class="titleColor fg1">{{item.title}}</div>
+      <div class="timeColor mr15"> {{item.time}}</div>
+      <div class="dots">...</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+
+ <div class="box">
+<div class="m15 fbox" *ngFor="let item of sortedVdolist;let i = index">
+  <div *ngIf="i<6" class="txtColor boxItem brdDim">{{item.title}}</div>
+  <div *ngFor="let value of countAr" [ngClass]="{'dispNone':i>5}">
+    <div class="disc" [ngClass]="{'colorFill':(value-1<(item.time.split(':')[0])/3.5)}"></div>
+  </div>
+</div>
+</div>
+
+

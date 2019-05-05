@@ -1,0 +1,48 @@
+.txtColor {
+    color: #D6D6D6D6;
+}
+
+.box {
+     display: flex;
+}
+
+.fbox {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.boxItem  {
+    display: flex;
+
+}
+
+.brdDim {
+    margin-top: 20px;
+    min-width: 62px;
+    font-size: 8.5px;
+}
+
+.disc {
+    border-radius: 22px;
+    width: 33px;
+    height: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #3E4E6C;
+    background-color: #3E4E6C;
+
+}
+
+.dispNone {
+    display: none;
+}
+
+.colorFill {
+    background-color:#1F8EFA;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

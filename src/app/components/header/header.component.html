@@ -1,0 +1,26 @@
+<div class="area">
+<div class="container bgColor"  [formGroup]="fg">
+
+<div class="box">
+  <div class="txtColor mr">
+    Topic Name:
+  </div>
+  <div>
+    <input formControlName="search" placeholder="Course Name" class="bgColor brdCl topicInput pl5 mr15" list="courses" (keyup)="onEnter($event)" [value]="valued" (change)="onSelect($event)">
+    <datalist id="courses" class="dataList" >
+      <option class="dataList" *ngFor="let item of playLists[indexValue].videos"  [value]="item.title">
+    </datalist> 
+</div>
+</div>
+
+<div class="box"> 
+<div class="txtColor mr onHover">Select User</div>
+<select  formControlName="users" class="bgColor brdCl topicInput mr15 h28"  (change)="onChange($event)">
+    <option class="bgColort onHover" *ngFor="let item of userList" >{{item.name}}</option>
+   <option hidden disabled>Select</option> 
+</select>
+<button class="btnBg" (click)="onSearch();onGetTotalTime()" [disabled]="btnDisabled || selectDisabled" [ngClass]="{'pointerCur':!btnDisabled && !selectDisabled,'disablBgCl':selectDisabled || btnDisabled}"  >Search</button>
+</div>
+
+</div>
+</div>
